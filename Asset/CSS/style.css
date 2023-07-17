@@ -1,0 +1,772 @@
+:root{
+    --neutral-background: #191919;
+    --neutral-placeholder: #434446;
+    --neutral-textbody: #BFBFBF;
+    --neutral-texttitle: #F5F5F5;
+
+    --primary-600: #DB3B00;
+    --primary-500: #FF5500;
+    --primary-400: #FF8B3F;
+    --primary-300: #FFAC66;
+    --primary-200: #FFCE99;
+    --primary-100: #FFEACC;   
+
+    /* fonts */
+    --display-display-1: "Neue Montreal";
+    --display-display-2: "PP Editorial New";
+  
+    /* font sizes */
+    --display-display-1-size: 128px;
+    --headline-headlin-2-size: 40px;
+    --system-button-size: 16px;
+    --headline-headline-1-size: 64px;
+    --headline-headline-3-size: 24px;
+}
+
+*:not(.traiphai, .phaitrai, .traiphai2){
+    background-color: var(--neutral-background);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*định dạng chữ*/
+
+h1{
+    font-size: 64px;
+    font-family: "Neue Montreal";
+    font-weight: 500;
+    line-height: 80px;
+    letter-spacing: 2px;
+}
+h2{
+    font-size: 40px;
+    font-family: "Neue Montreal";
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: 2px;
+}
+
+.display1{
+    font-size: 52px;
+    font-family: "PP Editorial New";
+    font-style: italic;
+    font-weight: 400;
+    line-height: 72px;
+}
+
+.textlink{
+    font-size: 20px;
+    font-family: "Neue Montreal";
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.body1{
+    font-size: 16px;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.displayto{
+    text-align: center;
+    font-size: 128px;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 144px;
+    text-transform: uppercase;
+    color: var(--neutral-texttitle);
+}
+
+/*----------css cho scroll---------------*/
+html{
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 0px;
+}
+.wrapper > .snap-point {
+    will-change: transform;
+  }
+  
+
+/*-----------------------------------------*/
+.header {
+    position: fixed;
+    z-index: 1000;
+    transition: .5s;
+    justify-content: space-between;
+    height:66px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-brand{
+    margin: 16px 120px;
+}
+
+.nav-brand img{
+    max-height: 100%;
+}
+
+.nav{
+    float: right;
+    margin-right: 120px;
+
+}
+
+
+nav ul{
+    float: right;
+}
+
+.nav ul li{
+    display:inline-block;
+    line-height: 66px;
+    
+}
+
+.nav ul li a{
+    color: var(--neutral-texttitle);
+    font-size: 16px;
+    font-family: Neue Montreal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.nav-bar{
+    margin-bottom: 0px;
+}
+
+a:hover, .nav-link:hover{
+    background-color: var(--primary-600);
+    transition: .5s;
+    color: var(--neutral-texttitle);
+    text-decoration: none;
+}
+
+
+.checkbtn{
+    font-size: 24px;
+    float: right;
+    line-height: 66px;
+    cursor: pointer;
+    display: none;
+    margin-right:20px;
+}
+
+#check{
+    display: none;
+}
+
+/*css cho section*/
+/*-----------------section1-------------*/
+.section1{
+    margin: 0px 120px;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+button.largebtn{
+    margin-top: 56px;
+    width: 288px;
+    height: 56px;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    color: var(--neutral-texttitle);
+    border-radius: 100px;
+    background-color: var(--primary-500-main, #F50);
+    transition: .3s;
+}
+
+.center-button{
+    text-align: center;
+}
+
+ button.largebtn:hover{
+    background-color: var(--primary-200: #FFCE99);
+    box-shadow: 0 0 0 8px #FFCE99;
+    color:  var(--neutral-texttitle);
+} 
+
+/*--------------------section2--------------------------------*/
+
+.section2{
+    padding-top:120px;
+    height: 100vh;
+    margin: 0px 120px;
+    scroll-snap-align: start;
+}
+
+.section2 .bodytext{
+    color: var(--neutral-textbody);
+}
+
+.section2.col-xl-5{
+    padding-top: 180px;
+}
+
+.section2 .col-xl-7{
+    padding-top: 140px;
+    padding-left: 82px;
+    padding-right: 102px;
+    
+}
+
+.section7 .col-xl-7{
+    padding-top: 0px;
+}
+/*----------------section3----------------------*/
+.section3{
+        height: 100vh;
+        margin: 0px 120px;
+        padding-top: 82px;
+        scroll-snap-align: start;
+}
+
+.section3 .textchinh .text1{
+    margin-bottom: 16px;
+
+}
+
+.work {
+    position: relative;
+}
+
+.work {
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: var(--neutral-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay > *{
+    transform: translateY(0px);
+}
+
+.imgsec3 {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.section3 .cursor{
+    position:fixed;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background: var(--neutral-texttitle);
+    transition: 0.1s;
+    transform: translate (-50%,-50%);
+    mix-blend-mode: difference ;
+
+}
+
+/* .textchinh .displayto :hover ~ .cursor{
+    transform: scale(6);
+} */
+
+
+/*----------------section4----------------------*/
+.section4{
+    height: 100vh;
+    margin: 0px 120px;
+    margin-top: 85px;
+    scroll-snap-align: start;
+    
+}
+
+.section4 .titlesection4{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 65px;
+    padding-left: 30px;
+}
+.section4 .chuwork{
+    color: #F5F5F5;
+    font-size: 64px;
+    font-family: "Neue Montreal";
+    font-weight: 500;
+    line-height: 80px;
+    letter-spacing: 2px;
+}
+
+.section4 .chuproject{
+    color: var(--neutral-text-title, #F5F5F5);
+    font-size: 64px;
+    font-family: "PP Editorial New";
+    font-style: italic;
+    font-weight: 400;
+    line-height: 80px;
+}
+
+/*-------------------section5--------------------------*/
+.section5{
+    height: 100vh;
+    margin-left: 120px;
+    scroll-snap-align: start;
+    
+}
+.section5 .container-scroll::-webkit-scrollbar{
+    width: 0; 
+}
+.section5 .container-scroll{
+    display: flex;
+    overflow-x: auto;
+    margin-bottom:32px;
+}
+
+.section5 h1{
+    padding-top: 80px;
+    padding-bottom:20px;
+}
+.section5 .item{
+    max-width: 400px;
+    height: 362px;
+    text-align: left;
+    margin-right:160px;
+}
+.section5 h2{
+    text-transform: uppercase;
+    color: var(--neutral-textbody);
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*-----------------section6-------------*/
+.section6{
+    margin: 0px 120px;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    width: 100vw;
+}
+.section6 h1{
+    padding-top: 80px;
+    color: var(--primary-500);
+    text-transform: uppercase;
+}
+
+.traiphai{
+    animation-name: move;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    
+}
+  
+@keyframes move {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 40%;
+    }
+}
+
+.phaitrai{
+    animation-name: loop;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+@keyframes loop {
+    from {
+      right: -100%;
+    }
+    to {
+      right: 40%;
+    }
+}
+.traiphai2{
+    animation-name: trai;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 100;
+    
+}
+@keyframes trai {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 40%;
+    }
+}
+
+/*-----------------section7-------------*/
+.section7{
+    margin: 0px 120px;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.section7 h1{
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+.section7 .col-xl-5{
+    padding-top:80px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.section7 .col-xl-7{
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.section7 .chuacontact{
+    background-color: var(--neutral-background);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 20px;
+    width: 100%;
+    padding-right: 40px;
+    box-shadow: rgba(243, 149, 67, 0.2) 0px 7px 29px 0px;
+
+}
+.section7 .chuacontact input{
+    background-color: var(--neutral-texttitle);
+    width: 100%;
+    margin: 0px 20px;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section7 .chuacontact input:focus-within{
+    border-color: #ff5500;
+    border-width: 2px;
+
+}
+
+.section7 textarea:focus-within{
+    border-color: #ff5500;
+    border-width:2px;
+}
+
+.section7 .chuacontact textarea{
+    background-color: var(--neutral-texttitle);
+    width: 100%;
+    margin: 0px 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.section7 .largebtn{
+    margin-top: 28px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/*--------------footer-----------------*/
+.footer{
+   padding: -60px 0px;
+   color: var(--neutral-placeholder);
+}
+
+.footer .socialicon{
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .socialicon a{
+    padding-right: 12px;
+}
+
+.footer ul{
+    margin-top: 0px;
+    list-style: none;
+    padding: 12px;
+    font-size: 20px;
+    font-family: "Neue Montreal";
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: var(--neutral-textbody);
+    padding:4px;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 16px;
+}
+
+/* định dạng đt của header */
+@media (max-width:1200px) {    
+
+    .section1, .section2, .section3, .section4, .section5, .section6, .section7{
+        margin: 0px 80px;
+    }
+    .header{
+         height: 66px;
+    }
+
+    .section2 p .display1{
+        padding-top: 0px; 
+        margin-left: 64px;
+    }
+}
+
+.section1{
+    height: auto;
+}
+.section2{
+    height: auto;
+}
+
+.section4, .section7 {
+    height: auto;
+}
+
+.section2 .col-xl-7{
+    padding-top: 20px;
+}
+.section7 .col-xl-7{
+    padding-top: 40px;
+}
+
+.section7 .footer{
+    padding-top: 12px;
+}
+
+@media (max-width:820px){
+
+    html{
+        scroll-snap-type: none;
+    }
+
+    .section1, .section2, .section3, .section4, .section5, .section6, .section7{
+        margin: 0px 40px;
+    }
+    .section7{
+        margin: 0px 40px;
+    }
+    .section2{
+        height: auto;
+    }
+
+    .section3{
+        height: auto;
+    }
+
+    .section4, .section7 {
+        height: auto;
+    }
+
+    .section5{
+        height: auto;
+    }
+
+    .section7 ,.col-xl-5{
+        padding-top: 0px;
+    }
+    a.nav-brand{
+        margin: 16px 40px;
+    }
+
+    .nav{
+        margin-right: 20px;
+    }
+    
+    .checkbtn{
+        display: block;
+    }
+
+    .displayto{
+        text-align: center;
+        font-size: 72px;
+        font-family: "Neue Montreal";
+        font-style: normal;
+        font-weight: 500;
+        line-height: 88px;
+        text-transform: uppercase;
+        color: var(--neutral-texttitle);
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--neutral-background);
+        top: 80px;
+        left: -100%;
+        padding-left: 20px;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav ul li{
+        display: block;
+        margin: 24px 0px;
+        line-height: 30px;
+    }
+
+    .nav ul li a{
+        font-size: 20px;
+        font-family: Neue Montreal;
+        font-weight: 400;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: var(--primary-200);
+
+    }
+
+    a.active, a:hover{
+        background: none;
+        color: var(--primary-600);
+        transition: .5s;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .section2 p .display1{
+        padding-top: 0px; 
+        margin-left: 64px;
+    }
+
+    .section7 .col-xl-7{
+        padding-top: 20px;
+    }
+} 
+@media (max-width:576px){
+    .section1, .section2, .section3, .section4, .section5, .section7{
+        margin: 0px 20px;
+        height: auto;
+    }
+
+    .section6{
+        height: 100vh;
+    }
+    .section7 .col-xl-7{
+    padding: 20px 0px 0px 0px;
+    }
+
+    h1{
+        font-size: 36px;
+        font-family: "Neue Montreal";
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: 2px;
+    }
+    
+    .display1{
+        font-size: 40px;
+        font-family: "PP Editorial New";
+        font-style: italic;
+        font-weight: 400;
+        line-height: 52px;
+    }
+
+    h2{
+        font-size: 24px;
+        font-family: "Neue Montreal";
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 2px;
+    }
+    
+
+    .section4 .chuwork{
+        color: #F5F5F5;
+        font-size: 36px;
+        font-family: "Neue Montreal";
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: 2px;
+    }
+    
+    .section4 .chuproject{
+        color: var(--neutral-text-title, #F5F5F5);
+        font-size: 40px;
+        font-family: "PP Editorial New";
+        font-style: italic;
+        font-weight: 400;
+        line-height: 52px;
+    }
+    .section2 .col-xl-7{
+        padding-top: 140px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+    .section2.col-xl-5{
+        padding-top: 0px;
+    }
+    
+
+    button.largebtn{
+        align-items: center;
+    }
+    .section2.col-xl-5{
+        margin-top: 80px;
+    }
+    
+    .section2.col-xl-7{
+        margin-top: 40px;
+    }
+
+    .nav-brand{
+        margin: 16px 20px;
+    }
+}
+
+
+
+
+
+
+
